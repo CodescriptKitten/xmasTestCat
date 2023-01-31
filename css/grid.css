@@ -1,0 +1,317 @@
+@supports (grid-area: auto) {
+	
+	/* Mobile Query */
+	@media screen and (min-width: 400px) {
+			
+		#allItems {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 90%;
+			grid-template-areas:
+				"item1"
+				"item2"
+				"item3"
+				"item4"
+				"item5"
+				"item6"
+				"item7"
+				"item8"
+				"item9";
+			justify-content: center;
+			padding: 3em 0 16em;
+			grid-gap: 1% 1%;
+			text-align: center;
+		}
+		
+		#item1 {
+			grid-area: item1;
+			max-height: 16em;
+			background-image:url("../images/htcVive.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item2 {
+			grid-area: item2;
+			max-height: 16em;
+			background-image:url("../images/hunDollar.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item3 {
+			grid-area: item3;
+			max-height: 16em;
+			background-image:url("../images/catList.jpeg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item4 {
+			grid-area: item4;
+			max-height: 16em;
+			background-image:url("../images/suitList.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item5 {
+			grid-area: item5;
+			max-height: 16em;
+			background-image:url("../images/flatCap.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item6 {
+			grid-area: item6;
+			max-height: 16em;
+			background-image:url("../images/ramList.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item7 {
+			grid-area: item7;
+			max-height: 16em;
+			background-image:url("../images/byteDrive.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item8 {
+			grid-area: item8;
+			max-height: 16em;
+			background-image:url("../images/monList.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item9 {
+			grid-area: item9;
+			max-height: 16em;
+			background-image:url("../images/macList.png");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+			
+	}
+
+	
+	/* Tablet Query */
+	@media screen and (min-width: 630px) {
+		
+		#allItems {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 45% 45%;
+			grid-template-areas:
+				"item1 blank1"
+				"item2 item3"
+				"item4 blank2"
+				"item5 item6"
+				"item7 blank3"
+				"item8 item9";
+			justify-content: center;
+			padding: 2em 0;
+			grid-gap: 1% 1%;
+			height: 1700px;
+		}
+		
+		#item1 {
+			grid-area: item1;
+			min-height: 16em;
+			grid-column-end: span 2;
+			background-image:url("../images/htcVive.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item2 {
+			grid-area: item2;
+			min-height: 16em;
+			background-image:url("../images/hunDollar.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item3 {
+			grid-area: item3;
+			min-height: 16em;
+			background-image:url("../images/catList.jpeg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item4 {
+			grid-area: item4;
+			min-height: 16em;
+			grid-column-end: span 2;
+			background-image:url("../images/suitList.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item5 {
+			grid-area: item5;
+			min-height: 16em;
+			background-image:url("../images/flatCap.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item6 {
+			grid-area: item6;
+			min-height: 16em;
+			background-image:url("../images/ramList.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item7 {
+			grid-area: item7;
+			min-height: 16em;
+			grid-column-end: span 2;
+			background-image:url("../images/byteDrive.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item8 {
+			grid-area: item8;
+			min-height: 16em;
+			background-image:url("../images/monList.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item9 {
+			grid-area: item9;
+			min-height: 16em;
+			background-image:url("../images/macList.png");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+	}
+	
+	/* Desktop Query */
+	@media screen and (min-width: 1080px) {
+		
+		#allItems {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 30% 30% 30%;
+			grid-template-areas:
+				"item1 item2 item3"
+				"item4 item5 item6"
+				"item7 item8 item9";
+			justify-content: center;
+			padding: 2em 0;
+			grid-gap: 1% 1%;
+			height: auto;
+		}
+		
+		#item1 {
+			grid-area: item1;
+			min-height: 16em;
+			background-image:url("../images/htcVive.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item2 {
+			grid-area: item2;
+			min-height: 16em;
+			background-image:url("../images/hunDollar.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item3 {
+			grid-area: item3;
+			min-height: 16em;
+			background-image:url("../images/catList.jpeg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item4 {
+			grid-area: item4;
+			min-height: 16em;
+			background-image:url("../images/suitList.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item5 {
+			grid-area: item5;
+			min-height: 16em;
+			background-image:url("../images/flatCap.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item6 {
+			grid-area: item6;
+			min-height: 16em;
+			background-image:url("../images/ramList.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item7 {
+			grid-area: item7;
+			min-height: 16em;
+			background-image:url("../images/byteDrive.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item8 {
+			grid-area: item8;
+			min-height: 16em;
+			background-image:url("../images/monList.jpg");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+		#item9 {
+			grid-area: item9;
+			min-height: 16em;
+			background-image:url("../images/macList.png");
+			background-size: cover;
+			background-position: center;
+			background-color: black;
+		}
+		
+	}
+	
+}
+

@@ -1,0 +1,748 @@
+/*
+----- CSS Colors ----- 
+
+Sandy white - #FFFEDA
+Eggnog yellow - #F8CD59
+Christmass green = #167800
+Jolly Gray - #AAAAAA
+Devil Gray - #666666
+Black - #000000
+
+----- CSS Font Families -----
+
+font-family: 'EB Garamond', serif;
+font-family: 'Mountains of Christmas', cursive;
+font-family: 'Rubik', sans-serif;
+font-family: 'Splash', cursive;
+
+----- CSS Image Credidations -----
+
+htcVive.jpg - "Vive Pro headset arrived 24 hours after shipping notification! That was unexpectedly quick! @htcvive #VivePro" by Jaymis is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+hunDollar.jpg - "Benjamin Franklin" by Ervins Strauhmanis is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+catList.jpeg - "Lucy as a Kitten 2" by comedy_nose is marked with Public Domain Mark 1.0. To view the terms, visit https://creativecommons.org/publicdomain/mark/1.0/?ref=openverse.
+
+macList.png - "Macbook Pro Retina" by pedrisaac@rocketmail.com is marked with Public Domain Mark 1.0. To view the terms, visit https://creativecommons.org/publicdomain/mark/1.0/?ref=openverse.
+
+suitList.jpg - "Men's Suit, Michigan Avenue, Chicago, December 2011" by danxoneil is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+flatCap.jpg - "Burberry Hat" by Menswear Market is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+ramList.jpg - "Corsair Vengeance 16GB (2x8GB) DDR3 1600 MHz (PC3 12800) Desktop Memory (CMZ16GX3M2A1600C10)" by osman.gucel is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+bytedrive.jpg - "Project 365 #212: 310718 Memory Box" by comedy_nose is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+monList.jpg - "Super ultra-wide monitor by Samsung at Gamescom 2018" by marcoverch is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+headList.jpg - "Bokeh-Cola" by JD Hancock is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+*/
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Mountains+of+Christmas:wght@400;700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&family=Splash&display=swap');
+
+/* Keyframes for animations */
+@keyframes textGlow {
+	0% {text-shadow: 0em 0em .2em lightgreen;}
+	50% {text-shadow: 0em 0em .2em red;}
+	100% {text-shadow: 0em 0em .2em lightgreen;}
+}
+
+@keyframes borderGlow {
+	0% {border-color: green;
+	box-shadow: 0 0 1em .2em darkgreen;}
+	50% {border-color: red;
+	box-shadow: 0 0 1em .2em darkred;}
+	100% {border-color: green;
+	box-shadow: 0 0 1em .2em darkgreen;}
+}
+
+@keyframes navGlow {
+	0% {border:dotted; border-color: white; border-width: 2px; color: white;}
+	25% {border:dashed; border-color: white; border-width: 2px; color: #FFFEDA;}
+	50% {border:solid; border-color: white; border-width: 2px; color: #F8CD59;}
+	75% {border:dashed; border-color: white; border-width: 2px; color: #FFFEDA;}
+	100% {border:dotted; border-color: white; border-width: 2px; color: white;}
+}
+
+@keyframes boxGlow {
+	0% {border:solid; border-color: darkblue dodgerblue;}
+	25% {border:solid; border-color: darkgreen limegreen;}
+	50% {border:solid; border-color: dodgerblue darkblue;}
+	75% {border:solid; border-color: limegreen darkgreen;}
+	100% {border:solid; border-color: darkblue dodgerblue;}
+}
+/* CSS Reset */
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	color: #FFF;
+	background-color: #000;
+}
+
+@media screen and (min-width: 400px), print {
+	
+	
+	/* Main Header Edits */
+	
+	header {
+		text-align: center;
+		background-color: #fff;
+		background-image: url("../images/headList.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right;
+		max-height: 50%;
+		padding: 3em 0;
+		font-size: 2em;
+	}
+	
+	header h1, header h2 {
+		font-family: 'Mountains of Christmas', cursive;
+	}
+	
+	#glowText {
+		animation-name: textGlow;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+
+	/* End of Main Header Edits */
+	
+	/* Main text edits */
+
+	main {
+		padding: 2em;
+	}
+
+	.box {
+		text-decoration: none;
+		
+		animation-name: boxGlow;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+
+	main section h2{
+		background: #00000099;
+		margin: 25% 0;
+	}
+
+	main section h3{
+		margin-top: 1em;
+		background: #000000;
+		float: left;
+		padding: 0 1em;
+		border: thin;
+		border-radius: 5px;
+		display: none;
+	}
+	
+	/* End of Main text edits */
+	
+	/* Navigation edits */
+
+	a {
+		background-color: #000000055;
+		text-decoration: none;
+		color: white;
+	}
+
+
+	nav .freeLine{
+		display: none;
+	}
+	
+	nav .navbar {
+		display: block;
+	}
+
+	nav ul{
+		text-align: center;
+		list-style-type: none;
+		background-color: #16780033;
+		border: solid;
+		border-color: #00337F50;
+	}
+
+	nav ul li{
+		display: inline-block;
+		padding: 0 1.5% 0 1.5%;
+	}
+
+	nav ul li a{
+		font-size: 1em;
+		text-decoration: none;
+		font-family: 'Rubik', sans-serif;
+		color: white;
+	}
+
+	nav ul li a:hover {
+		animation-name: navGlow;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+	
+	/* End of Nav text edits */
+	
+	/* Burger Menu edits */
+	
+	.container {
+  		min-width: 100%;
+  		margin: auto;
+}
+
+	.navbar {
+  		width: 100%;
+  		box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+	.nav-container {
+  		display: flex;
+  		justify-content: space-between;
+  		align-items: center;
+  		height: 62px;
+}
+
+	.navbar .menu-items {
+ 		 display: flex;
+		 font-family: 'Rubik', sans-serif;
+}
+
+	.navbar .nav-container li {
+  		list-style: none;
+}
+
+	.navbar .nav-container a {
+  		text-decoration: none;
+  		color: #fff;
+  		font-weight: 500;
+  		font-size: 1.2em;
+  		padding: 0.7rem;
+}
+
+	.navbar .nav-container a:hover{
+    	font-weight: bolder;
+}
+
+	.nav-container {
+  		display: block;
+  		position: relative;
+  		height: 60px;
+}
+
+	.nav-container .checkbox {
+  		position: absolute;
+  		display: block;
+  		height: 32px;
+  		width: 32px;
+  		top: 20px;
+  		left: 20px;
+  		z-index: 5;
+  		opacity: 0;
+  		cursor: pointer;
+}
+
+	.nav-container .hamburger-lines {
+  		display: block;
+  		height: 26px;
+  		width: 32px;
+  		position: absolute;
+  		top: 17px;
+  		left: 20px;
+  		z-index: 2;
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: space-between;
+}
+
+	.nav-container .hamburger-lines .line {
+  		display: block;
+  		height: 4px;
+  		width: 100%;
+  		border-radius: 10px;
+  		background: #fff;
+}
+
+	.nav-container .hamburger-lines .line1 {
+  		transform-origin: 0% 0%;
+  		transition: transform 0.4s ease-in-out;
+}
+
+	.nav-container .hamburger-lines .line2 {
+  		transition: transform 0.2s ease-in-out;
+}
+
+	.nav-container .hamburger-lines .line3 {
+  		transform-origin: 0% 100%;
+  		transition: transform 0.4s ease-in-out;
+}
+
+	.navbar .menu-items {
+  		padding-top: 120px;
+  		background-color:#000000CF;
+  		height: 100vh;
+  		width: 100%;
+  		transform: translate(-150%);
+  		display: flex;
+  		flex-direction: column;
+  		margin-left: -40px;
+  		padding-left: 50px;
+  		transition: transform 0.5s ease-in-out;
+  		text-align: center;
+}
+
+	.navbar .menu-items li {
+  		margin-bottom: 1.2rem;
+  		font-size: 1.5rem;
+  		font-weight: 500;
+}
+
+	.logo {
+  		position: absolute;
+  		top: 5px;
+  		right: 15px;
+  		font-size: 1.2rem;
+  		color: #fff;
+}
+
+	.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  		transform: translateX(0);
+}
+
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  		transform: rotate(45deg);
+}
+
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  		transform: scaleY(0);
+}
+
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  		transform: rotate(-45deg);
+}
+
+	.nav-container input[type="checkbox"]:checked ~ .logo{
+  		display: none;
+}
+	
+	/* End of Burger Menu edits */
+	
+	/* Grid Item edits */
+
+	#allItems {
+		clear: both;
+		background-color: #66666655;
+		text-align: center;
+		font-family: 'Mountains of Christmas', cursive;
+		border: solid;
+		border-radius: .5em;
+		border-width: .2em;
+		animation-name: borderGlow;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+	}
+
+	#specItem {
+		padding: 2em 2em 3em;
+		clear: both;
+		background-color: #66666655;
+		font-family: 'EB Garamond', serif;
+		text-align: left;
+		border: solid;
+		border-radius: .5em;
+		border-width: .2em;
+		animation-name: borderGlow;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+	}
+
+	#specItem img {	
+		max-height: 16em;
+		width: 90%;
+		display: block;
+		animation-name: boxGlow;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+
+	#specItem section {
+		display: block;
+		width: 90%;
+		font-size: 1em;
+	}
+	
+	#specItem  a {
+		animation-name: textGlow;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+	
+	#specItem a:hover {
+		color: #AAAAAA;
+		text-decoration: underline;
+	}
+	.imageLimit {
+		max-height: 16em;
+		width: 100%;
+	}
+	
+	/* End of Grid Item Edits */
+	
+	/* Footer Edits */
+
+	footer {
+
+	}
+
+	footer nav {
+		display: none;
+	}
+	
+	footer nav .freeLine {
+		display: none;
+	}
+	
+	footer nav .navbar {
+		display: block;
+	}
+	
+	footer p {
+		text-align: center;
+		font-size: 0.9em;
+		padding: 1em 0;
+	}
+
+	footer p .claim{
+		font-size: 1.2em;
+		text-align: center;
+		padding: 1.4em 0;
+	}
+	
+	footer h3 {
+		font-size: 0.9em;
+		text-align: center;
+		padding: 0 0;
+		margin: 0;
+	}
+	
+	/* End of Footer Edits */
+	
+}
+
+/* Desktop Media Query */
+
+@media screen and (min-width: 630px), print{
+	
+	/* Item pages */
+	
+	#specItem img {	
+		max-height: 20em;
+		min-width: 50%;
+		max-width: 65%;
+		animation-name: boxGlow;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+
+	#specItem section {
+		width: 90%;
+		font-size: 1em;
+	}
+	
+	#specItem a {
+		animation-name: textGlow;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+	
+	#specItem a:hover {
+		color: #AAAAAA;
+		text-decoration: underline;
+	}
+	
+	/* Nav */
+	
+	nav .freeLine {
+		display: none;
+	}
+	
+	nav .navbar {
+		display: block;
+	}
+	
+	/* Burger Menu edits */
+	
+	.container {
+  		min-width: 100%;
+  		margin: auto;
+}
+
+	.navbar {
+  		width: 100%;
+  		box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+	.nav-container {
+  		display: flex;
+  		justify-content: space-between;
+  		align-items: center;
+  		height: 62px;
+}
+
+	.navbar .menu-items {
+ 		 display: flex;
+		 font-family: 'Rubik', sans-serif;
+}
+
+	.navbar .nav-container li {
+  		list-style: none;
+}
+
+	.navbar .nav-container a {
+  		text-decoration: none;
+  		color: #fff;
+  		font-weight: 500;
+  		font-size: 1.2em;
+  		padding: 0.7rem;
+}
+
+	.navbar .nav-container a:hover{
+    	font-weight: bolder;
+}
+
+	.nav-container {
+  		display: block;
+  		position: relative;
+  		height: 60px;
+}
+
+	.nav-container .checkbox {
+  		position: absolute;
+  		display: block;
+  		height: 32px;
+  		width: 32px;
+  		top: 20px;
+  		left: 20px;
+  		z-index: 5;
+  		opacity: 0;
+  		cursor: pointer;
+}
+
+	.nav-container .hamburger-lines {
+  		display: block;
+  		height: 26px;
+  		width: 32px;
+  		position: absolute;
+  		top: 17px;
+  		left: 20px;
+  		z-index: 2;
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: space-between;
+}
+
+	.nav-container .hamburger-lines .line {
+  		display: block;
+  		height: 4px;
+  		width: 100%;
+  		border-radius: 10px;
+  		background: #fff;
+}
+
+	.nav-container .hamburger-lines .line1 {
+  		transform-origin: 0% 0%;
+  		transition: transform 0.4s ease-in-out;
+}
+
+	.nav-container .hamburger-lines .line2 {
+  		transition: transform 0.2s ease-in-out;
+}
+
+	.nav-container .hamburger-lines .line3 {
+  		transform-origin: 0% 100%;
+  		transition: transform 0.4s ease-in-out;
+}
+
+	.navbar .menu-items {
+  		padding-top: 120px;
+  		background-color:#000000CF;
+  		height: 100vh;
+  		width: 100%;
+  		transform: translate(-150%);
+  		display: flex;
+  		flex-direction: column;
+  		margin-left: -40px;
+  		padding-left: 50px;
+  		transition: transform 0.5s ease-in-out;
+  		text-align: center;
+}
+
+	.navbar .menu-items li {
+  		margin-bottom: 1.2rem;
+  		font-size: 1.5rem;
+  		font-weight: 500;
+}
+
+	.logo {
+  		position: absolute;
+  		top: 5px;
+  		right: 15px;
+  		font-size: 1.2rem;
+  		color: #fff;
+}
+
+	.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  		transform: translateX(0);
+}
+
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  		transform: rotate(45deg);
+}
+
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  		transform: scaleY(0);
+}
+
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  		transform: rotate(-45deg);
+}
+
+	.nav-container input[type="checkbox"]:checked ~ .logo{
+  		display: none;
+}
+	
+	/* End of Burger Menu edits */
+	
+	/* Footer */
+	
+	footer {
+
+	}
+
+	footer nav {
+		display: none;
+	}
+	
+	footer nav .freeLine {
+		display: none;
+	}
+	
+	footer p {
+		text-align: center;
+		font-size: 0.9em;
+		padding: 1em 0;
+	}
+
+	footer p .claim{
+		font-size: 1.2em;
+		text-align: center;
+		padding: 1.4em 0;
+	}
+	
+	footer h3 {
+		font-size: 0.9em;
+		text-align: center;
+		padding: 0 0;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 1079px), print {
+	
+	/* Desktop Header and Header Nav */
+	header {
+		text-align: left;
+		padding: 2em 0 3em 2em;
+	}
+	
+	nav .freeLine {
+		display: block;
+	}
+	
+	nav .navbar {
+		display: none;
+	}
+	
+	nav ul li {
+		display: inline-block;
+		padding: 0 0.8% 0 0.8%;
+	}
+
+	nav ul li a {
+		font-size: 1.4em;
+		text-decoration: none;
+		font-family: 'Rubik', sans-serif;
+		color: white;
+	}
+	/* End of Desktop Header and Header Nav */
+	
+	main section h2 {
+		margin-top: 0;
+	}
+	
+	main section h3 {
+		display: inline-block;
+		float: left;
+	}
+	/* Desktop Item styles */
+	
+	#specItem img {	
+		max-height: 18em;
+		min-height: 16em;
+		max-width: 30%;
+		min-width: 15%;
+		display: inline-block;
+		animation-name: boxGlow;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+
+	#specItem section {
+		display: inline-block;
+		width: 65%;
+		font-size: 1em;
+		padding-left: 1em;
+	}
+	
+	/* Desktop Item styles end */
+	
+	footer {
+
+	}
+
+	footer nav {
+		display: block;
+	}
+	
+	footer nav .freeLine {
+		display: block;
+	}
+	
+	footer p {
+		text-align: center;
+		font-size: 0.9em;
+		padding: 1em 0;
+	}
+
+	footer p .claim{
+		font-size: 1.2em;
+		text-align: center;
+		padding: 1.4em 0;
+	}
+	
+	footer h3 {
+		font-size: 0.9em;
+		text-align: center;
+		padding: 0 0;
+		margin: 0;
+	}
+}
+
